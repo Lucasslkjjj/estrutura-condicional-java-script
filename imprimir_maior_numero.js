@@ -1,0 +1,12 @@
+const readlineSync = require('readline-Sync')
+const num1 = readlineSync.question("digite um número:\n")
+const num2 = readlineSync.question("digite um segundo número:\n")
+const num3 = readlineSync.question("digite um terceiro número:\n")
+if (num1 > num2 && num1 > num3)
+console.log(`o maior número que você digitou é:${num1}`)
+else if(num1 < num2 && num2 > num3)
+console.log(`o maior número que você digitou é:${num2}`)
+else if(num1 < num3 && num2 < num3)
+console.log(`o maior número que você digitou é:${num3}`)
+else
+  console.log("erro! verifique se digitou corretamente e que sejam números distintos.")
